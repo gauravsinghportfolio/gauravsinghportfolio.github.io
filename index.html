@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gaurav Singh | Marketing & Digital Media</title>
+
+<meta name="description" content="Gaurav Singh — Marketing & Digital Media professional focused on digital campaigns, content strategy, lead generation and marketing analytics.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --cream: #f7f1ed;
+    --cream-dark: #eee3dc;
+    --white: #fffaf7;
+    --burgundy: #681d28;
+    --burgundy-dark: #42131b;
+    --rose: #9b4c5b;
+    --dusty: #c48b94;
+    --pink: #e8cdd0;
+    --text: #201b1c;
+    --muted: #746b6c;
+    --line: #dccbc8;
+    --black: #181416;
+    --max: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(247,241,237,.94);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    max-width: var(--max);
+    width: 90%;
+    margin: auto;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--burgundy);
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    transition: .25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--burgundy);
+}
+
+.nav-button {
+    border: 1px solid var(--text);
+    border-radius: 50px;
+    padding: 11px 20px;
+}
+
+.nav-button:hover {
+    background: var(--burgundy);
+    color: white !important;
+    border-color: var(--burgundy);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 0;
+}
+
+.eyebrow {
+    color: var(--burgundy);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(62px, 8vw, 112px);
+    line-height: .92;
+    letter-spacing: -5px;
+    max-width: 760px;
+}
+
+.hero h1 span {
+    color: var(--burgundy);
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin-top: 32px;
+    font-size: 19px;
+    color: var(--muted);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: 1px solid var(--text);
+    font-weight: 700;
+    font-size: 14px;
+    transition: .3s ease;
+}
+
+.btn-primary {
+    background: var(--burgundy);
+    color: white;
+    border-color: var(--burgundy);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary:hover {
+    background: var(--burgundy-dark);
+}
+
+.hero-card {
+    background: var(--burgundy);
+    min-height: 500px;
+    padding: 48px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-card::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.2);
+    right: -120px;
+    bottom: -100px;
+}
+
+.hero-card::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.07);
+    left: -80px;
+    top: 80px;
+}
+
+.hero-card-small {
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: var(--pink);
+}
+
+.hero-card h2 {
+    position: relative;
+    z-index: 2;
+    font-family: "Playfair Display", serif;
+    font-size: 47px;
+    line-height: 1.05;
+}
+
+.hero-card-bottom {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid rgba(255,255,255,.25);
+    padding-top: 20px;
+}
+
+.hero-card-bottom span {
+    display: block;
+    color: var(--pink);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-card-bottom strong {
+    display: block;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stat {
+    padding: 42px 25px;
+    border-right: 1px solid var(--line);
+}
+
+.stat:first-child {
+    padding-left: 0;
+}
+
+.stat:last-child {
+    border-right: 0;
+}
+
+.stat-number {
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    color: var(--burgundy);
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 120px 0;
+}
+
+.section-label {
+    color: var(--burgundy);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.section-heading {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: .98;
+    letter-spacing: -3px;
+}
+
+.section-intro {
+    color: var(--muted);
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.about-large {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.about-text {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.about-text p + p {
+    margin-top: 20px;
+}
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.tag {
+    border: 1px solid var(--line);
+    background: var(--white);
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* =========================
+   WORK INTRO
+========================= */
+
+.work-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 70px;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.project {
+    margin-bottom: 110px;
+}
+
+.project-header {
+    background: var(--black);
+    color: white;
+    padding: 55px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: end;
+}
+
+.project-number {
+    color: var(--dusty);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1;
+}
+
+.project-description {
+    max-width: 460px;
+    color: #d4cccd;
+}
+
+.project-content {
+    background: var(--white);
+    padding: 45px;
+    border: 1px solid var(--line);
+    border-top: none;
+}
+
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 40px;
+}
+
+.project-skills span {
+    background: var(--pink);
+    color: var(--burgundy-dark);
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-image {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .4s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.04);
+}
+
+.project-caption {
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* =========================
+   PHILER
+========================= */
+
+.philer {
+    background: var(--burgundy);
+    color: white;
+}
+
+.philer .section-label {
+    color: var(--pink);
+}
+
+.philer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.philer .section-intro {
+    color: #e7d8da;
+}
+
+.philer-stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.philer-stat {
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 30px;
+}
+
+.philer-stat strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 46px;
+}
+
+.philer-stat span {
+    color: var(--pink);
+    font-size: 13px;
+}
+
+.philer-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.philer-step {
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+.philer-step strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.philer-step p {
+    color: #d9ccce;
+    font-size: 14px;
+}
+
+/* =========================
+   LAGERSHED
+========================= */
+
+.lagershed-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.lagershed-card {
+    background: #d8b9a5;
+    min-height: 430px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lagershed-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    line-height: 1;
+}
+
+.lagershed-card p {
+    max-width: 400px;
+}
+
+.framework {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.framework-card {
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--line);
+}
+
+.framework-number {
+    color: var(--burgundy);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.framework-card h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.framework-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================
+   ACADEMIC
+========================= */
+
+.academic {
+    background: var(--cream-dark);
+}
+
+.academic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.academic-card {
+    background: var(--white);
+    padding: 45px;
+    border: 1px solid var(--line);
+}
+
+.academic-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+}
+
+.academic-card p {
+    color: var(--muted);
+    margin-top: 12px;
+}
+
+.course-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.course {
+    background: var(--pink);
+    color: var(--burgundy-dark);
+    padding: 9px 13px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--line);
+}
+
+.skill-box {
+    padding: 35px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--white);
+}
+
+.skill-box:nth-child(4n) {
+    border-right: 0;
+}
+
+.skill-box h3 {
+    color: var(--burgundy);
+    margin-bottom: 13px;
+}
+
+.skill-box p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    background: var(--black);
+    color: white;
+}
+
+.experience .section-label {
+    color: var(--dusty);
+}
+
+.experience-grid {
+    margin-top: 65px;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 180px 1fr 120px;
+    gap: 35px;
+    padding: 38px 0;
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.experience-date {
+    color: var(--dusty);
+    font-size: 13px;
+}
+
+.experience-item h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+}
+
+.experience-company {
+    color: var(--pink);
+    font-weight: 700;
+    margin: 4px 0 10px;
+}
+
+.experience-item p {
+    color: #c9c1c2;
+    max-width: 720px;
+}
+
+.experience-location {
+    text-align: right;
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* =========================
+   RESUME
+========================= */
+
+.resume-section {
+    background: var(--pink);
+}
+
+.resume-box {
+    background: var(--burgundy);
+    color: white;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.resume-box h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 80px);
+    line-height: .95;
+}
+
+.resume-box p {
+    color: #e5d4d6;
+    max-width: 520px;
+    margin-top: 20px;
+}
+
+.resume-button {
+    background: white;
+    color: var(--burgundy);
+    border-radius: 50px;
+    padding: 16px 25px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: .3s ease;
+}
+
+.resume-button:hover {
+    transform: translateY(-3px);
+    background: var(--cream);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: var(--cream);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.contact-heading {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(52px, 7vw, 90px);
+    line-height: .95;
+}
+
+.contact-heading span {
+    color: var(--burgundy);
+    font-style: italic;
+}
+
+.contact-info {
+    align-self: end;
+}
+
+.contact-info p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.contact-link {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-link:hover {
+    color: var(--burgundy);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--burgundy-dark);
+    color: white;
+    padding: 35px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+footer p {
+    color: #cbbdc0;
+    font-size: 13px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.footer-social a:hover {
+    color: var(--pink);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: reveal .8s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: .15s;
+}
+
+.delay-2 {
+    animation-delay: .3s;
+}
+
+.delay-3 {
+    animation-delay: .45s;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a:not(.nav-button) {
+        display: none;
+    }
+
+    .hero,
+    .about-grid,
+    .philer-grid,
+    .lagershed-intro,
+    .academic-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-card {
+        min-height: 400px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .stat:nth-child(3),
+    .stat:nth-child(4) {
+        border-top: 1px solid var(--line);
+    }
+
+    .work-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .project-work {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .framework {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-box:nth-child(4n) {
+        border-right: 1px solid var(--line);
+    }
+
+    .skill-box:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .experience-item {
+        grid-template-columns: 130px 1fr;
+    }
+
+    .experience-location {
+        display: none;
+    }
+
+    .resume-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 80px 0;
+    }
+
+    .nav-inner {
+        height: 68px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-card {
+        padding: 32px;
+    }
+
+    .hero-card h2 {
+        font-size: 40px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat {
+        padding: 28px 15px;
+    }
+
+    .stat-number {
+        font-size: 38px;
+    }
+
+    .about-large {
+        font-size: 30px;
+    }
+
+    .project-header,
+    .project-content {
+        padding: 30px;
+    }
+
+    .project-work {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image img {
+        height: auto;
+    }
+
+    .philer-stat-grid,
+    .philer-steps,
+    .framework,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-box,
+    .skill-box:nth-child(2n),
+    .skill-box:nth-child(4n) {
+        border-right: 0;
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .resume-box {
+        padding: 40px 30px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+    <div class="nav-inner">
+
+        <a href="#top" class="logo">
+            GAURAV<span>.</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="nav-button">Let's Talk</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<main id="top">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero container">
+
+    <div class="reveal">
+
+        <div class="eyebrow">
+            Marketing & Digital Media
+        </div>
+
+        <h1>
+            Ideas into<br>
+            <span>impact.</span>
+        </h1>
+
+        <p class="hero-description">
+            I'm Gaurav Singh — a marketing professional focused on
+            digital campaigns, content strategy, audience engagement,
+            lead generation and data-informed growth.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#work" class="btn btn-primary">
+                View My Work →
+            </a>
+
+            <a href="resume.pdf" target="_blank" class="btn">
+                View Resume
+            </a>
+
+            <a href="https://www.linkedin.com/in/gauravsingh-c/" target="_blank" class="btn">
+                LinkedIn ↗
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card reveal delay-2">
+
+        <div class="hero-card-small">
+            Marketing • Digital • Strategy
+        </div>
+
+        <h2>
+            Marketing<br>
+            that connects.
+        </h2>
+
+        <div class="hero-card-bottom">
+
+            <span>Current Focus</span>
+
+            <strong>
+                Digital Marketing
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<div class="stats">
+
+    <div class="stats-grid container">
+
+        <div class="stat">
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">
+                Targeted outreach prospects
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">1K+</div>
+            <div class="stat-label">
+                Client opportunities
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">
+                Team members led
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">
+                Client campaigns
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            01 / About
+        </div>
+
+        <div class="about-grid">
+
+            <div>
+
+                <h2 class="section-heading">
+                    A marketer with a creative mindset.
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p class="about-large">
+                    I combine marketing strategy, digital media
+                    and hands-on campaign execution.
+                </p>
+
+                <div class="about-text">
+
+                    <p>
+                        My background in Advertising & Digital Marketing
+                        has given me experience across campaign planning,
+                        social media, content development, audience research,
+                        marketing analytics and lead generation.
+                    </p>
+
+                    <p>
+                        I enjoy working at the intersection of creativity
+                        and performance — understanding an audience,
+                        developing the message and finding the right
+                        channels to bring the idea to life.
+                    </p>
+
+                </div>
+
+                <div class="about-tags">
+
+                    <span class="tag">Digital Marketing</span>
+                    <span class="tag">Campaign Strategy</span>
+                    <span class="tag">Content</span>
+                    <span class="tag">Lead Generation</span>
+                    <span class="tag">Marketing Analytics</span>
+                    <span class="tag">Market Research</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SELECTED WORK
+========================= -->
+
+<section id="work">
+
+    <div class="container">
+
+        <div class="work-intro">
+
+            <div>
+
+                <div class="section-label">
+                    02 / Selected Work
+                </div>
+
+                <h2 class="section-heading">
+                    Projects I'm proud of.
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                A selection of campaign, content, lead generation
+                and marketing strategy projects developed through
+                professional experience and academic work.
+            </p>
+
+        </div>
+
+
+        <!-- LIFE IS A SPECIAL EVENT -->
+
+        <article class="project">
+
+            <div class="project-header">
+
+                <div>
+
+                    <div class="project-number">
+                        01 / Client Campaign
+                    </div>
+
+                    <h3 class="project-title">
+                        Life is a<br>
+                        Special Event
+                    </h3>
+
+                </div>
+
+                <p class="project-description">
+                    Digital marketing and campaign management across
+                    social media, content and community engagement.
+                    Led a five-person digital marketing team across
+                    multiple client campaigns.
+                </p>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-skills">
+
+                    <span>Campaign Management</span>
+                    <span>Social Media</span>
+                    <span>Content</span>
+                    <span>Team Leadership</span>
+                    <span>Community Growth</span>
+
+                </div>
+
+
+                <div class="project-work">
+
+                    <div class="project-image">
+
+                        <img
+                        src="life-special-event-melissa-article.png"
+                        alt="Life is a Special Event client content">
+
+                        <div class="project-caption">
+                            CLIENT CONTENT
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-image">
+
+                        <img
+                        src="life-special-event-ayurveda-campaign.png"
+                        alt="Ayurveda campaign">
+
+                        <div class="project-caption">
+                            CAMPAIGN CONTENT
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-image">
+
+                        <img
+                        src="life-special-event-campaign-tracking.png"
+                        alt="Campaign planning and tracking">
+
+                        <div class="project-caption">
+                            CAMPAIGN PLANNING & TRACKING
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PHILER -->
+
+        <article class="project">
+
+            <div class="project-header">
+
+                <div>
+
+                    <div class="project-number">
+                        02 / Digital Marketing
+                    </div>
+
+                    <h3 class="project-title">
+                        Philer.ai
+                    </h3>
+
+                </div>
+
+                <p class="project-description">
+                    Lead generation and digital outreach for a
+                    technology-enabled real estate law platform.
+                    Focused on prospecting, CRM tracking,
+                    research and client acquisition.
+                </p>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-skills">
+
+                    <span>Lead Generation</span>
+                    <span>Direct Outreach</span>
+                    <span>CRM</span>
+                    <span>Google Sheets</span>
+                    <span>Market Research</span>
+
+                </div>
+
+
+                <div class="project-work">
+
+                    <div class="project-image">
+
+                        <div style="
+                            height:250px;
+                            background:linear-gradient(135deg,#681d28,#9b4c5b);
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            color:white;
+                            padding:30px;
+                            text-align:center;
+                            font-family:'Playfair Display',serif;
+                            font-size:30px;
+                        ">
+                            5,000+<br>
+                            Prospects Reached
+                        </div>
+
+                        <div class="project-caption">
+                            TARGETED OUTREACH
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-image">
+
+                        <div style="
+                            height:250px;
+                            background:#e8cdd0;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            color:#42131b;
+                            padding:30px;
+                            text-align:center;
+                            font-family:'Playfair Display',serif;
+                            font-size:30px;
+                        ">
+                            ~1,000<br>
+                            Opportunities
+                        </div>
+
+                        <div class="project-caption">
+                            CLIENT ACQUISITION
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-image">
+
+                        <div style="
+                            height:250px;
+                            background:#201b1c;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            color:white;
+                            padding:30px;
+                            text-align:center;
+                            font-family:'Playfair Display',serif;
+                            font-size:30px;
+                        ">
+                            CRM<br>
+                            WORKFLOW
+                        </div>
+
+                        <div class="project-caption">
+                            GOOGLE SHEETS CRM
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHILER CASE STUDY
+========================= -->
+
+<section class="philer">
+
+    <div class="container">
+
+        <div class="philer-grid">
+
+            <div>
+
+                <div class="section-label">
+                    Philer.ai / Case Study
+                </div>
+
+                <h2 class="section-heading">
+                    Turning outreach into opportunity.
+                </h2>
+
+                <p class="section-intro" style="margin-top:30px;">
+                    I conducted targeted digital outreach to real estate
+                    and mortgage professionals, built structured CRM
+                    workflows and supported client acquisition initiatives.
+                </p>
+
+
+                <div class="philer-stat-grid">
+
+                    <div class="philer-stat">
+                        <strong>5K+</strong>
+                        <span>Prospects reached</span>
+                    </div>
+
+                    <div class="philer-stat">
+                        <strong>~1K</strong>
+                        <span>Client opportunities</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="philer-steps">
+
+                <div class="philer-step">
+
+                    <strong>01 — Research</strong>
+
+                    <p>
+                        Identified relevant real estate and mortgage
+                        professionals across target markets.
+                    </p>
+
+                </div>
+
+
+                <div class="philer-step">
+
+                    <strong>02 — Outreach</strong>
+
+                    <p>
+                        Conducted targeted direct-message outreach
+                        and developed response frameworks.
+                    </p>
+
+                </div>
+
+
+                <div class="philer-step">
+
+                    <strong>03 — CRM</strong>
+
+                    <p>
+                        Built structured Google Sheets tracking to
+                        organize prospects, outreach and follow-ups.
+                    </p>
+
+                </div>
+
+
+                <div class="philer-step">
+
+                    <strong>04 — Follow-up</strong>
+
+                    <p>
+                        Organized follow-up processes supporting
+                        client acquisition and digital engagement.
+                    </p>
+
+                </div>
+
+
+                <div class="philer-step">
+
+                    <strong>05 — Content</strong>
+
+                    <p>
+                        Developed social media content and outreach
+                        templates supporting digital engagement.
+                    </p>
+
+                </div>
+
+
+                <div class="philer-step">
+
+                    <strong>06 — Insights</strong>
+
+                    <p>
+                        Conducted market research to identify target
+                        audiences and support marketing strategy.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LAGERSHED
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label">
+            03 / Campaign Project
+        </div>
+
+
+        <div class="lagershed-intro">
+
+            <div>
+
+                <h2 class="section-heading">
+                    LagerShed.
+                </h2>
+
+                <p class="section-intro" style="margin-top:25px;">
+                    An integrated marketing campaign developed from
+                    the ground up for a Canadian craft beer brand.
+                </p>
+
+            </div>
+
+
+            <div class="lagershed-card">
+
+                <div>
+                    <div class="project-number">
+                        Integrated Marketing
+                    </div>
+
+                    <h3>
+                        Research.<br>
+                        Strategy.<br>
+                        Activation.
+                    </h3>
+                </div>
+
+                <p>
+                    Market research, target audience definition,
+                    competitive analysis, positioning, campaign
+                    objectives and social strategy.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="framework">
+
+            <div class="framework-card">
+
+                <div class="framework-number">01 — RESEARCH</div>
+
+                <h4>Market Research</h4>
+
+                <p>
+                    Researched the market, customer needs and
+                    competitive landscape.
+                </p>
+
+            </div>
+
+
+            <div class="framework-card">
+
+                <div class="framework-number">02 — AUDIENCE</div>
+
+                <h4>Target Audience</h4>
+
+                <p>
+                    Defined the target audience and identified
+                    relevant motivations.
+                </p>
+
+            </div>
+
+
+            <div class="framework-card">
+
+                <div class="framework-number">03 — STRATEGY</div>
+
+                <h4>Campaign Strategy</h4>
+
+                <p>
+                    Developed campaign positioning and measurable
+                    objectives.
+                </p>
+
+            </div>
+
+
+            <div class="framework-card">
+
+                <div class="framework-number">04 — MESSAGE</div>
+
+                <h4>Messaging</h4>
+
+                <p>
+                    Connected product benefits with customer needs
+                    and brand identity.
+                </p>
+
+            </div>
+
+
+            <div class="framework-card">
+
+                <div class="framework-number">05 — COMPETITION</div>
+
+                <h4>Competitive Analysis</h4>
+
+                <p>
+                    Considered competing craft beer brands and
+                    market positioning.
+                </p>
+
+            </div>
+
+
+            <div class="framework-card">
+
+                <div class="framework-number">06 — ACTIVATION</div>
+
+                <h4>Social Activation</h4>
+
+                <p>
+                    Planned social-led campaign activation and
+                    audience engagement.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ACADEMIC WORK
+========================= -->
+
+<section class="academic">
+
+    <div class="container">
+
+        <div class="section-label">
+            04 / Academic Work
+        </div>
+
+        <div class="academic-grid">
+
+            <div>
+
+                <h2 class="section-heading">
+                    Sheridan<br>
+                    College.
+                </h2>
+
+                <p class="section-intro" style="margin-top:25px;">
+                    Advanced Diploma in Advertising & Digital Marketing.
+                    Graduated April 2025.
+                </p>
+
+            </div>
+
+
+            <div class="academic-card">
+
+                <h3>
+                    What I studied.
+                </h3>
+
+                <p>
+                    Coursework across advertising, marketing analytics,
+                    media planning, programmatic & digital media,
+                    advertising metrics and integrated campaign strategy.
+                </p>
+
+
+                <div class="course-list">
+
+                    <span class="course">
+                        Digital Advertising
+                    </span>
+
+                    <span class="course">
+                        Marketing Analytics
+                    </span>
+
+                    <span class="course">
+                        Media Planning
+                    </span>
+
+                    <span class="course">
+                        Programmatic & Digital Media
+                    </span>
+
+                    <span class="course">
+                        Advertising Metrics
+                    </span>
+
+                    <span class="course">
+                        Integrated Campaign Strategy
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-label">
+            05 / Skills
+        </div>
+
+        <div class="work-intro">
+
+            <h2 class="section-heading">
+                What I work with.
+            </h2>
+
+            <p class="section-intro">
+                A practical marketing toolkit built through education,
+                professional experience and hands-on projects.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+
+                <h3>Digital Marketing</h3>
+
+                <p>
+                    Campaign management, social media marketing,
+                    content strategy and digital strategy.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Analytics</h3>
+
+                <p>
+                    Google Analytics 4, marketing metrics,
+                    reporting and performance analysis.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Paid Media</h3>
+
+                <p>
+                    Google Ads, paid search, paid social,
+                    CTR, CPC, CPM and CPA.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Programmatic</h3>
+
+                <p>
+                    Programmatic advertising, DSP / SSP concepts,
+                    ad exchanges and digital media.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Content</h3>
+
+                <p>
+                    Social content, LinkedIn articles,
+                    campaign messaging and Canva.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>CRM & Outreach</h3>
+
+                <p>
+                    Prospecting, direct outreach, Google Sheets
+                    and CRM workflows.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Research</h3>
+
+                <p>
+                    Audience research, competitor analysis,
+                    market research and customer insights.
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Collaboration</h3>
+
+                <p>
+                    Team leadership, client communication
+                    and project coordination.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section class="experience" id="experience">
+
+    <div class="container">
+
+        <div class="section-label">
+            06 / Experience
+        </div>
+
+        <h2 class="section-heading">
+            Where I've<br>
+            worked.
+        </h2>
+
+        <div class="experience-grid">
+
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Aug 2026 — Present
+                </div>
+
+                <div>
+
+                    <h3>
+                        Marketing Specialist
+                    </h3>
+
+                    <div class="experience-company">
+                        SS Traders
+                    </div>
+
+                    <p>
+                        Coordinate B2B marketing, customer communication,
+                        order coordination and promotional activities.
+                        Support market research, customer engagement,
+                        digital marketing and business development.
+                    </p>
+
+                </div>
+
+                <div class="experience-location">
+                    New Delhi
+                </div>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Jan 2026 — May 2026
+                </div>
+
+                <div>
+
+                    <h3>
+                        Marketing Specialist Intern
+                    </h3>
+
+                    <div class="experience-company">
+                        Philer.ai
+                    </div>
+
+                    <p>
+                        Led targeted outreach, CRM tracking, client
+                        prospecting, market research and digital
+                        marketing activity for real estate and
+                        mortgage professionals.
+                    </p>
+
+                </div>
+
+                <div class="experience-location">
+                    Toronto, ON
+                </div>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Jan 2025 — Apr 2025
+                </div>
+
+                <div>
+
+                    <h3>
+                        Team Leader — Marketing
+                    </h3>
+
+                    <div class="experience-company">
+                        Life is a Special Event
+                    </div>
+
+                    <p>
+                        Led a five-person digital marketing team and
+                        supported three client campaigns across
+                        LinkedIn, Instagram, Facebook and email.
+                    </p>
+
+                </div>
+
+                <div class="experience-location">
+                    Mississauga, ON
+                </div>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Jun 2021 — Jan 2022
+                </div>
+
+                <div>
+
+                    <h3>
+                        Operations & Merchandising Coordinator
+                    </h3>
+
+                    <div class="experience-company">
+                        PepsiCo
+                    </div>
+
+                    <p>
+                        Coordinated distribution, order processing,
+                        dispatch and merchandising operations while
+                        maintaining accurate operational records.
+                    </p>
+
+                </div>
+
+                <div class="experience-location">
+                    New Delhi
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESUME
+========================= -->
+
+<section class="resume-section">
+
+    <div class="container">
+
+        <div class="resume-box">
+
+            <div>
+
+                <div class="section-label" style="color:#e8cdd0;">
+                    Resume
+                </div>
+
+                <h2>
+                    Want the<br>
+                    full story?
+                </h2>
+
+                <p>
+                    Explore my full experience, skills, education
+                    and certifications in my resume.
+                </p>
+
+            </div>
+
+
+            <a
+                href="resume.pdf"
+                target="_blank"
+                class="resume-button"
+            >
+                VIEW / DOWNLOAD RESUME ↓
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-label">
+            07 / Contact
+        </div>
+
+        <div class="contact-grid">
+
+            <div>
+
+                <h2 class="contact-heading">
+                    Let's create<br>
+                    something <span>meaningful.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <p>
+                    I'm open to marketing, digital marketing,
+                    campaign, content, media and marketing
+                    coordinator opportunities.
+                </p>
+
+                <a
+                    class="contact-link"
+                    href="mailto:choudharygaurav924@gmail.com"
+                >
+                    choudharygaurav924@gmail.com
+                </a>
+
+                <a
+                    class="contact-link"
+                    href="tel:+16478247068"
+                >
+                    (647) 824-7068
+                </a>
+
+                <a
+                    class="contact-link"
+                    href="https://www.linkedin.com/in/gauravsingh-c/"
+                    target="_blank"
+                >
+                    LinkedIn ↗
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <p>
+            © 2026 Gaurav Singh. Marketing & Digital Media.
+        </p>
+
+        <div class="footer-social">
+
+            <a href="#top">
+                Back to top ↑
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/gauravsingh-c/"
+                target="_blank"
+            >
+                LinkedIn ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
